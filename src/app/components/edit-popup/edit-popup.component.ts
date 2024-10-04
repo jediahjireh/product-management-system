@@ -48,6 +48,7 @@ export class EditPopupComponent {
   // confirm edits
   @Output() confirm = new EventEmitter<Product>();
 
+  /*
   // create separate form validation component when project expands
   specialCharacterValidator(): ValidatorFn {
     return (control) => {
@@ -57,12 +58,14 @@ export class EditPopupComponent {
       return hasSpecialCharacter ? { hasSpecialCharacter: true } : null;
     };
   }
+  call: this.specialCharacterValidator()
+  */
 
   // product form to add new or edit existing products to be initialised in ngOnInit to ensure formBuilder is available
   ngOnInit() {
     this.productForm = this.formBuilder.group({
       // validate input
-      name: ['', [Validators.required]], // , this.specialCharacterValidator()]],
+      name: ['', [Validators.required]],
       image: [''],
       price: ['', [Validators.required]],
       rating: [0],

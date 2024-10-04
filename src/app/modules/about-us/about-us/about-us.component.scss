@@ -2,12 +2,21 @@
   padding: 3rem;
   text-align: center;
   color: white;
-}
 
-h1 {
-  font-family: cursive;
-}
+  h1 {
+    font-family: cursive;
+  }
 
-p {
-  font-weight: 300;
+  p {
+    font-weight: 300;
+  }
+
+  .custom-text {
+    font-size: x-small;
+    letter-spacing: 1.6px;
+  }
+
+  .custom-notice {
+    font-size: small;
+  }
 }
