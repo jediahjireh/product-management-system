@@ -1,0 +1,43 @@
+<div class="column gap-1 wrapper cursor-grab mt-25">
+  <div class="image-container">
+    <img [src]="product.image" alt="Product Thumbnail" />
+  </div>
+
+  <!-- two-way data binding for product rating -->
+  <div>
+    <h2 class="title">{{ product.name }}</h2>
+    <span class="price">R{{ product.price }}</span>
+    <span class="rating-container flex">
+      <p-rating
+        [(ngModel)]="product.rating"
+        [readonly]="true"
+        iconCancelClass="hidden"
+        stars="5"
+      >
+        <!-- custom heart icons -->
+        <ng-template pTemplate="onicon">
+          <img
+            title="Heart on"
+            src="/images/heart-on.png"
+            width="25px"
+            height="25px"
+          />
+        </ng-template>
+
+        <ng-template pTemplate="officon">
+          <img
+            title="Heart off"
+            src="/images/heart-off.png"
+            width="25px"
+            height="25px"
+          />
+        </ng-template>
+      </p-rating>
+    </span>
+  </div>
+  <!--
+  <div class="row gap-05">
+   <span class="price-label">Price: </span>
+    <span class="price">R{{ product.price }}</span>
+  </div> -->
+</div>

@@ -1,0 +1,15 @@
+// override the PrimeNG theme styles
+
+/*
+.p-rating-cancel-item {
+  display: none;
+}
+*/
+
+.p-rating-cancel {
+  display: none;
+}
+
+input.ng-invalid {
+  border: 1px solid red;
+}
