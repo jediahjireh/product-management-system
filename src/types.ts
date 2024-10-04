@@ -28,7 +28,7 @@ export interface Options {
 }
 
 export interface Products {
-  items: Product[];
+  products: Product[];
   total: number;
   totalPages: number;
   page: number;

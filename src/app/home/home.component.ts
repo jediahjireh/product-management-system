@@ -92,7 +92,8 @@ export class HomeComponent {
       .getProducts('http://localhost:3000/clothes', { page, perPage })
       .subscribe({
         next: (products: Products) => {
-          this.products = products.items;
+          // loop through array
+          this.products = products.products;
           this.totalRecords = products.total;
         },
         error: (error) => {
