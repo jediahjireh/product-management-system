@@ -6,7 +6,7 @@
     object-fit: contain;
     width: 100%;
     border-radius: 5px;
-    background-color: grey;
+    gap: 0.1rem;
   }
 
   .title {
@@ -52,6 +52,8 @@
     padding: 2px;
     border-radius: 5px;
     display: inline-block;
+
+    /*  position: relative; */
   }
 
   .rating-container {
@@ -72,5 +74,29 @@
       padding: 0;
       margin: 0;
     }
+  }
+  /*
+  .action-buttons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 0.1rem;
+  }
+*/
+
+  .action-buttons {
+    display: flex;
+    gap: 0.2rem;
+    text-align: right;
+    margin-bottom: -12px;
+  }
+
+  .edit-button {
+    background-color: var(--bg-pink);
+  }
+
+  .delete-button {
+    background-color: #881008;
   }
 }

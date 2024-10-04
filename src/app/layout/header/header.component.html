@@ -1,3 +1,14 @@
 <header class="wrapper row full-center">
   <img src="/images/logo.png" alt="Logo image" class="logo" />
+
+  <div class="row gap-1">
+    <!-- '/' can be found in both links, hence the need for exact active options -->
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/about-us" routerLinkActive="active">About</a>
+  </div>
 </header>

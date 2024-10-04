@@ -1,8 +1,15 @@
-.add-product-btn {
+.add-product-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 10;
+  box-shadow: 0 0 10px 2.5px var(--bg-color);
+  background-color: var(--bg-pink);
+  // smooth transition for the shadow
+  transition: box-shadow 0.3s ease;
 
-  box-shadow: 0 0 10px 2.5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    // add shadow on hover
+    box-shadow: 0 0 8px 2px var(--border-color);
+  }
 }

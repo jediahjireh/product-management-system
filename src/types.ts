@@ -1,4 +1,4 @@
-import { HttpContext, HttpHeaders, HttpParams } from "@angular/common/http";
+import { HttpContext, HttpHeaders, HttpParams } from '@angular/common/http';
 
 export interface Options {
   headers?:
@@ -6,7 +6,7 @@ export interface Options {
     | {
         [header: string]: string | string[];
       };
-  observe?: "body";
+  observe?: 'body';
   context?: HttpContext;
   params?:
     | HttpParams
@@ -18,7 +18,7 @@ export interface Options {
           | ReadonlyArray<string | number | boolean>;
       };
   reportProgress?: boolean;
-  responseType?: "json";
+  responseType?: 'json';
   withCredentials?: boolean;
   transferCache?:
     | {
@@ -36,6 +36,7 @@ export interface Products {
 }
 
 export interface Product {
+  id?: number;
   price: string;
   name: string;
   image: string;

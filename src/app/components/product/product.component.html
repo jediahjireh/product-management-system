@@ -1,12 +1,33 @@
 <div class="column gap-1 wrapper cursor-grab mt-25">
+  <!-- action buttons -->
+  <div class="row gap-05 justify-right action-buttons">
+    <button
+      title="Edit Product Button"
+      type="button"
+      pButton
+      icon="pi pi-pencil"
+      (click)="editProduct()"
+      class="p-button-sm edit-button"
+    ></button>
+    <button
+      title="Delete Product Button"
+      type="button"
+      pButton
+      icon="pi pi-trash"
+      (click)="confirmDelete()"
+      class="delete-button p-button-sm"
+      #deleteButton
+    ></button>
+  </div>
   <div class="image-container">
     <img [src]="product.image" alt="Product Thumbnail" />
   </div>
 
   <!-- two-way data binding for product rating -->
   <div>
-    <h2 class="title">{{ product.name }}</h2>
-    <span class="price">R{{ product.price }}</span>
+    <!-- pipes for reusability needed for future expansion -->
+    <h2 class="title">{{ product.name | truncateName : 20 : "..." }}</h2>
+    <span class="price">{{ product.price | price }}</span>
     <span class="rating-container flex">
       <p-rating
         [(ngModel)]="product.rating"
@@ -35,9 +56,6 @@
       </p-rating>
     </span>
   </div>
-  <!--
-  <div class="row gap-05">
-   <span class="price-label">Price: </span>
-    <span class="price">R{{ product.price }}</span>
-  </div> -->
 </div>
+
+<p-confirmPopup />
