@@ -1,27 +1,71 @@
-# Storefront
+# Grace & Garments
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+## Overview
 
-## Development server
+Grace & Garments is a chic and stylish storefront built with Angular. This project showcases various Angular concepts, including standalone apps, modules, services, components and routing. Users can perform basic CRUD (Create, Read, Update, Delete) operations on products, featuring unique outfit ideas that have been custom designed using Canva.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Grace \& Garments](#grace--garments)
+  - [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Standalone App**: The project is structured as a standalone Angular application.
+- **Modules**: Utilises Angular modules for better organisation and separation of concerns.
+- **Services**: Demonstrates the use of Angular services for data management and business logic.
+- **Components**: Various components for different parts of the storefront, such as product listing, editing and addition.
+- **Routing**: Implements Angular routing to navigate between different sections of the application.
+- **CRUD Operations**: Users can perform Create, Read, Update and Delete operations on products.
+- **Custom Images**: All images were customised in Canva, presenting a unique and stylish selection of outfits.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Before you begin, ensure you have the following installed:
 
-## Running end-to-end tests
+- Node.js and npm
+- Angular CLI:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  ```zsh
+  npm install -g @angular/cli
+  ```
 
-## Further help
+- PrimeNG
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Installation
+
+Clone the repository:
+
+```zsh
+git clone https://github.com/jediahjireh/grace-and-garments.git
+```
+
+Navigate into the project directory:
+
+```zsh
+cd grace-and-garments/storefront
+```
+
+Install dependencies:
+
+```zsh
+npm install
+```
+
+### Usage
+
+Run the development server:
+
+```zsh
+ng serve
+```
+
+Open your browser and navigate to `http://localhost:4200/` to see the app in action.
