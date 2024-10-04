@@ -1,0 +1,179 @@
+{
+  "products": [
+    {
+      "id": 15,
+      "image": "images/products/image15.png",
+      "name": "Petal's Envelopment",
+      "price": "3215.50",
+      "rating": 5
+    },
+    {
+      "id": 16,
+      "image": "images/products/image16.png",
+      "name": "Daring Daffodil",
+      "price": "1212.50",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "image": "images/products/image9.png",
+      "name": "Embroidered Elegance",
+      "price": "2132.00",
+      "rating": 4
+    },
+    {
+      "id": 17,
+      "image": "images/products/image17.png",
+      "name": "Golden Hour",
+      "price": "2319.99",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "Let's Dance",
+      "image": "images/products/image8.png",
+      "price": "552.00",
+      "rating": 3
+    },
+    {
+      "id": 10,
+      "name": "Telephonic Lure",
+      "image": "images/products/image10.png",
+      "price": "355.00",
+      "rating": 5
+    },
+    {
+      "id": 11,
+      "image": "images/products/image11.png",
+      "name": "Socialite",
+      "price": "1315.00",
+      "rating": 4
+    },
+    {
+      "id": 12,
+      "image": "images/products/image12.png",
+      "name": "Fairytale",
+      "price": "3412.50",
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "image": "images/products/image14.png",
+      "name": "Fair Maiden",
+      "price": "154.50",
+      "rating": 3
+    },
+    {
+      "id": 20,
+      "name": "Little Pink Dress",
+      "image": "images/products/image20.png",
+      "price": "825.75",
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "image": "images/products/image13.png",
+      "name": "Sentimentality",
+      "price": "314.50",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "image": "images/products/image3.png",
+      "name": "Too Cool",
+      "price": "325.00",
+      "rating": 3
+    },
+    {
+      "id": 5,
+      "name": "So Chic",
+      "image": "images/products/image5.png",
+      "price": "355.00",
+      "rating": 5
+    },
+    {
+      "id": 1,
+      "image": "images/products/image1.png",
+      "name": "Apple Bottoms",
+      "price": "324.00",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Ravishing",
+      "image": "images/products/image6.png",
+      "price": "415.00",
+      "rating": 4
+    },
+    {
+      "id": 21,
+      "name": "The 1800s Called",
+      "image": "images/products/image21.png",
+      "price": "615.50",
+      "rating": 3
+    },
+    {
+      "id": 22,
+      "image": "images/products/image22.png",
+      "name": "Painter's Love",
+      "price": "922.99",
+      "rating": 4
+    },
+    {
+      "id": 23,
+      "name": "Working 9-to-5",
+      "image": "images/products/image23.png",
+      "price": "612.00",
+      "rating": 5
+    },
+    {
+      "id": 24,
+      "name": "A Little Coquettish",
+      "image": "images/products/image24.png",
+      "price": "540.00",
+      "rating": 5
+    },
+    {
+      "id": 25,
+      "name": "Warm Embrace",
+      "image": "images/products/image25.png",
+      "price": "999.99",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Fresh Daisy",
+      "image": "images/products/image2.png",
+      "price": "113.50",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "image": "images/products/image4.png",
+      "name": "Cutesy",
+      "price": "625.00",
+      "rating": 3
+    },
+    {
+      "id": 7,
+      "name": "Baby Fever",
+      "image": "images/products/image7.png",
+      "price": "385.00",
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "name": "Milkshake?",
+      "image": "images/products/image18.png",
+      "price": "275.00",
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "image": "images/products/image19.png",
+      "name": "Sugary Sweet",
+      "price": "420.00",
+      "rating": 3
+    }
+  ]
+}
