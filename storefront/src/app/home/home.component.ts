@@ -89,7 +89,11 @@ export class HomeComponent {
   }
   fetchProducts(page: number, perPage: number) {
     this.productsService
-      .getProducts('http://localhost:3000/clothes', { page, perPage })
+      // fetch products from http://localhost:3000/clothes
+      .getProducts('https://grace-and-garments.vercel.app/clothes', {
+        page,
+        perPage,
+      })
       .subscribe({
         next: (products: Products) => {
           // loop through array

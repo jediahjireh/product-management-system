@@ -10,7 +10,7 @@ const port = 3000;
 
 // cors configuration - allow requests from localhost:4200
 const corsOptions = {
-  origin: "http://localhost:4200",
+  origin: "https://grace-and-garments.netlify.app",
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
 };
