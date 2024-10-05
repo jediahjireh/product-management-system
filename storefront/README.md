@@ -45,13 +45,13 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```zsh
-   git clone https://github.com/jediahjireh/grace-and-garments.git
+   git clone https://github.com/jediahjireh/product-management-system.git
    ```
 
 2. Navigate into the project directory:
 
    ```zsh
-   cd grace-and-garments/storefront
+   cd product-management-system/storefront
    ```
 
 3. Install dependencies:

@@ -32,10 +32,16 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```zsh
-   git clone https://github.com/jediahjireh/grace-garments.git
+   git clone https://github.com/jediahjireh/product-management-system.git
    ```
 
-2. Install dependencies:
+2. Navigate to the backend directory:
+
+   ```zsh
+   cd product-management-system/backend
+   ```
+
+3. Install dependencies:
 
    ```zsh
    npm install
