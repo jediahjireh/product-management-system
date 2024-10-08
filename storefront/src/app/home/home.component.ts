@@ -90,7 +90,7 @@ export class HomeComponent {
   fetchProducts(page: number, perPage: number) {
     this.productsService
       // fetch products from http://localhost:3000/clothes
-      .getProducts('https://grace-and-garments.vercel.app/clothes', {
+      .getProducts('http://localhost:3000/clothes', {
         page,
         perPage,
       })

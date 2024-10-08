@@ -9,6 +9,7 @@
 - [Screenshots](#screenshots)
 - [Frontend](#frontend)
 - [Backend](#backend)
+- [Configuration](#configuration)
 
 ## Overview
 
@@ -151,5 +152,43 @@ Product data is managed using the following JSON structure in [`products.json`](
   ]
 }
 ```
+
+## Configuration
+
+Replace localhost endpoints with live website links in production.
+
+```javascript
+// cors configuration - allow requests from http://localhost:4200
+const corsOptions = {
+  origin: "https://localhost:4200",
+  optionsSuccessStatus: 204,
+  methods: "GET, POST, PUT, DELETE",
+};
+```
+
+- Backend: [server.js](/backend/server.js) (replace link to frontend)
+
+```typescript
+ fetchProducts(page: number, perPage: number) {
+    this.productsService
+      // fetch products from http://localhost:3000/clothes
+      .getProducts('http://localhost:3000/clothes', {
+        page,
+        perPage,
+      })
+      .subscribe({
+        next: (products: Products) => {
+          // loop through array
+          this.products = products.products;
+          this.totalRecords = products.total;
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+  }
+```
+
+- Frontend: [home.component.ts](/storefront/src/app/home/home.component.ts) (replace link to backend API)
 
 ---
