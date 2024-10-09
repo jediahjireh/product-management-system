@@ -89,8 +89,8 @@ export class HomeComponent {
   }
   fetchProducts(page: number, perPage: number) {
     this.productsService
-      // fetch products from http://localhost:3000/clothes
-      .getProducts('http://localhost:3000/clothes', {
+      // fetch products from backend (http://localhost:3000/clothes)
+      .getProducts('https://grace-and-garments-api.vercel.app/clothes', {
         page,
         perPage,
       })
@@ -109,7 +109,10 @@ export class HomeComponent {
   // CRUD functions
   editProduct(product: Product, id: number) {
     this.productsService
-      .editProduct(`http://localhost:3000/clothes/${id}`, product)
+      .editProduct(
+        `https://grace-and-garments-api.vercel.app/clothes/${id}`,
+        product
+      )
       .subscribe(
         // split handling of successful requests and errors
         {
@@ -125,7 +128,7 @@ export class HomeComponent {
 
   deleteProduct(id: number) {
     this.productsService
-      .deleteProduct(`http://localhost:3000/clothes/${id}`)
+      .deleteProduct(`https://grace-and-garments-api.vercel.app/clothes/${id}`)
       .subscribe({
         next: (data) => {
           console.log(data);
@@ -142,7 +145,7 @@ export class HomeComponent {
 
   addProduct(product: Product) {
     this.productsService
-      .addProduct(`http://localhost:3000/clothes`, product)
+      .addProduct(`https://grace-and-garments-api.vercel.app/clothes`, product)
       .subscribe({
         next: (data) => {
           console.log(data);
@@ -156,6 +159,7 @@ export class HomeComponent {
         },
       });
   }
+
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.

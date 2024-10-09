@@ -8,9 +8,9 @@ import cors from "cors";
 const app = express();
 const port = 3000;
 
-// cors configuration - allow requests from http://localhost:4200
+// cors configuration - allow requests from frontend (http://localhost:4200)
 const corsOptions = {
-  origin: "https://localhost:4200",
+  origin: "https://grace-and-garments.vercel.app",
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
 };

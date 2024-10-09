@@ -155,10 +155,10 @@ Product data is managed using the following JSON structure in [`products.json`](
 
 ## Configuration
 
-Replace localhost endpoints with live website links in production.
+Replace live website links with localhost endpoints in development.
 
 ```javascript
-// cors configuration - allow requests from http://localhost:4200
+// cors configuration - allow requests from frontend (https://localhost:4200)
 const corsOptions = {
   origin: "https://localhost:4200",
   optionsSuccessStatus: 204,
@@ -171,7 +171,7 @@ const corsOptions = {
 ```typescript
  fetchProducts(page: number, perPage: number) {
     this.productsService
-      // fetch products from http://localhost:3000/clothes
+      // fetch products from frontend (http://localhost:3000/clothes)
       .getProducts('http://localhost:3000/clothes', {
         page,
         perPage,
@@ -187,8 +187,54 @@ const corsOptions = {
         },
       });
   }
+
+ // CRUD functions
+  editProduct(product: Product, id: number) {
+    this.productsService
+      .editProduct(`http://localhost:3000/clothes/${id}`, product)
+      .subscribe(
+        {
+          next: (data) => {
+            console.log(data);
+          },
+          error: (error) => {
+            console.log(error);
+          },
+        }
+      );
+  }
+
+  deleteProduct(id: number) {
+    this.productsService
+      .deleteProduct(`http://localhost:3000/clothes/${id}`)
+      .subscribe({
+        next: (data) => {
+          console.log(data);
+          this.fetchProducts(0, this.rows);
+          this.resetPaginator();
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+  }
+
+  addProduct(product: Product) {
+    this.productsService
+      .addProduct(`http://localhost:3000/clothes`, product)
+      .subscribe({
+        next: (data) => {
+          console.log(data);
+          this.fetchProducts(0, this.rows);
+          this.resetPaginator();
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+  }
 ```
 
-- Frontend: [home.component.ts](/storefront/src/app/home/home.component.ts) (replace link to backend API)
+- Frontend: [home.component.ts](/storefront/src/app/home/home.component.ts) (replace links to backend API)
 
 ---
